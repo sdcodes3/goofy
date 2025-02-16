@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+* {
+    font-family: 'Neue Montreal', sans-serif;
+}
+  
+body{
+    background-color: #F5F1E2;
+}
