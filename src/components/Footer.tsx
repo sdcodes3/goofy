@@ -1,5 +1,5 @@
-import linkedin from "./images/linkedin.png";
-import instagram from "./images/instagram.png";
+import linkedin from "../images/linkedin.png";
+import instagram from "../images/instagram.png";
 
 const Footer = () => {
   return (

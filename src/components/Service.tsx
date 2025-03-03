@@ -4,12 +4,20 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Accordian from "./Accordian";
+import girl from "../images/Transhumans Ecto Plasma.png";
 
 export default function Service() {
   return (
-    <div className="w-full p-12 bg-white">
-      Services
-      <div className="mx-auto w-full divide-y divide-white/5 rounded-xl">
+    <div className="w-full py-12">
+      <div className="text-[#FFD86F] px-12 text-3xl font-semibold flex items-end gap-12 max-w-full w-[13%] min-w-[10rem]">
+        Services
+        <img src={girl} alt="Walking girl" />
+      </div>
+      <div className="bg-white px-12 mt-6">
+        <Accordian />
+      </div>
+      {/* <div className="mx-auto w-full divide-y divide-white/5 rounded-xl">
         <Disclosure as="div" className="p-6" defaultOpen={true}>
           <DisclosureButton className="group flex w-full items-center justify-between">
             <span className="text-sm/6 font-medium text-black group-data-[hover]:text-black/80">
@@ -38,7 +46,7 @@ export default function Service() {
             No.
           </DisclosurePanel>
         </Disclosure>
-      </div>
+      </div> */}
     </div>
   );
 }
